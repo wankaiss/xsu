@@ -14,3 +14,7 @@ management:
     web:
       exposure:
         include: "health,info,httptrace,metrics,auditevents"
+
+logging:
+  level:
+    org.springframework.web.filter.CommonsRequestLoggingFilter: "DEBUG"
